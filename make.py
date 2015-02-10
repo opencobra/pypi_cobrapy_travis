@@ -3,6 +3,7 @@
 import os
 
 wheels = [i for i in os.listdir(".") if i.endswith(".whl")]
+wheels.sort()
 
 html_line = """<a href="%s">%s</a><br>\n"""
 
